@@ -1,4 +1,16 @@
 <html ng-app='application'>
-  <body ng-view>
-  </body>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+        <script src="application/module.js"></script>
+        <script src="application/controller.js"></script>
+        <script src="dashboard/module.js"></script>
+        <script src="dashboard/directive/visit-counter.js"></script>
+        <script src="dashboard/service/visit-counter.js"></script>
+        <script src="toolkit/module.js"></script>
+        <script src="toolkit/service/cookie.js"></script>
+    </head>
+    <body data-ng-controller="applicationController">
+        Visit counter
+        <div dashboard-visit-counter></div>
+    </body>
 </html>
