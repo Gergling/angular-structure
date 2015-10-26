@@ -5,7 +5,7 @@
 angular.module('dashboard').directive('dashboardVisitCounter', function () {
     return {
         restrict: 'A',
-        scope: {class: '=dashboardVisitCounter'},
+        scope: {title: '@dashboardVisitCounter'},
         bindToController: true,
         templateUrl: 'dashboard/partial/visit-counter.html',
 
